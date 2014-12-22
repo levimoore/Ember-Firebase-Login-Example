@@ -101,36 +101,3 @@ eval("//# sourceURL=vendor/ember-cli/loader.js");
 ;eval("define(\"Ember-Firebase-Login-Example/tests/unit/routes/secret-test\", \n  [\"ember-qunit\"],\n  function(__dependency1__) {\n    \"use strict\";\n    var moduleFor = __dependency1__.moduleFor;\n    var test = __dependency1__.test;\n\n    moduleFor(\'route:secret\', \'SecretRoute\', {\n      // Specify the other units that are required for this test.\n      // needs: [\'controller:foo\']\n    });\n\n    test(\'it exists\', function() {\n      var route = this.subject();\n      ok(route);\n    });\n  });//# sourceURL=Ember-Firebase-Login-Example/tests/unit/routes/secret-test.js");
 
 ;eval("define(\"Ember-Firebase-Login-Example/tests/unit/routes/signup-test\", \n  [\"ember-qunit\"],\n  function(__dependency1__) {\n    \"use strict\";\n    var moduleFor = __dependency1__.moduleFor;\n    var test = __dependency1__.test;\n\n    moduleFor(\'route:signup\', \'SignupRoute\', {\n      // Specify the other units that are required for this test.\n      // needs: [\'controller:foo\']\n    });\n\n    test(\'it exists\', function() {\n      var route = this.subject();\n      ok(route);\n    });\n  });//# sourceURL=Ember-Firebase-Login-Example/tests/unit/routes/signup-test.js");
-
-/* jshint ignore:start */
-
-define('Ember-Firebase-Login-Example/config/environment', ['ember'], function(Ember) {
-  var prefix = 'Ember-Firebase-Login-Example';
-/* jshint ignore:start */
-
-try {
-  var metaName = prefix + '/config/environment';
-  var rawConfig = Ember['default'].$('meta[name="' + metaName + '"]').attr('content');
-  var config = JSON.parse(unescape(rawConfig));
-
-  return { 'default': config };
-}
-catch(err) {
-  throw new Error('Could not read config from meta tag with name "' + metaName + '".');
-}
-
-/* jshint ignore:end */
-
-
-
-});
-
-if (runningTests) {
-  require("Ember-Firebase-Login-Example/tests/test-helper");
-} else {
-  require("Ember-Firebase-Login-Example/app")["default"].create({"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true});
-}
-
-
-
-/* jshint ignore:end */

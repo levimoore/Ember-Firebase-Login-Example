@@ -1,1 +1,0 @@
-/Users/levimoore/GitHub/Ember-Firebase-Login-Example/tmp/custom_static_compiler-tmp_dest_dir-9iJ7sfrl.tmp/ember-cli-shims/LICENSE.md
