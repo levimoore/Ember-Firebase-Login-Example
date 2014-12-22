@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase_instance: '<THE NAME OF YOUR FIREBASE>',
     modulePrefix: 'ember-firebase-login-example',
     environment: environment,
     baseURL: '/',
