@@ -1,0 +1,1 @@
+/Users/levimoore/GitHub/Ember-Firebase-Login-Example/tmp/custom_static_compiler-tmp_dest_dir-09FUzbUf.tmp/ember-qunit-notifications/README.md
