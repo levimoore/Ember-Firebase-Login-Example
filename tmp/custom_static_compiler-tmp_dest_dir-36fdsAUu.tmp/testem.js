@@ -1,0 +1,1 @@
+/Users/levimoore/GitHub/Ember-Firebase-Login-Example/node_modules/ember-cli/lib/broccoli/testem.js
