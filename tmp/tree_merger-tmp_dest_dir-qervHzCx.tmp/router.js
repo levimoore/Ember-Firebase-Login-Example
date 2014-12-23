@@ -1,1 +1,0 @@
-/Users/levimoore/GitHub/Ember-Firebase-Login-Example/app/router.js

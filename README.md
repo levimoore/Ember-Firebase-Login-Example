@@ -2,6 +2,8 @@
 
 This is a work flow for authentication using [Firebase](https://www.firebase.com/) with [Ember-CLI.](http://www.ember-cli.com/) 
 
+You will need to sign up for Firebase. 
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
