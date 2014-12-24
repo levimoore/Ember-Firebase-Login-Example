@@ -1,1 +1,29 @@
-{{outlet}}
+<div class="col-md-6 col-md-offset-3">
+<h3>Create Account</h3>
+</div>
+</div>
+<div class="row">
+<form {{action 'createUser' on='submit'}}class="form-horizontal" role='form'>
+<div class='form-group'>
+<label class="col-sm-5 control-label" for='createEmail'><p class='lead'>What is your email?</p></label>
+<div class="col-sm-5">
+{{input type="email" classNames="form-control" value=createEmail id="createEmail" placeholder="Don't worry, we won't spam you..."}}
+</div>
+
+<div class="col-sm-10">
+<button type="submit" class="btn btn-custom pull-right">Submit</button>
+</div>
+</form>
+</div>
+<div class="row"></div>
+	<div class="col-md-6 col-md-offset-3">
+    {{#if error}}
+      <div class="alert alert-warning">
+        <div class="alert-title"><h4>Oops, there was a problem:</div>
+        <h5>{{error.message}}</h5>
+      </div>
+    {{/if}}
+	</div>
+</div>
+</div>
+</div>
