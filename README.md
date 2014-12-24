@@ -41,7 +41,7 @@ In the first fucntion of the Environment.js file add the name of your Firbase in
     	},
     
 #####App/adapters/application.js
-In the application adapter file is where you wil implement Ember Data and direct it to use Firebase as your store. This file should not need updating, as it pulls its information from your config file.
+In the application adapter file is where Ember Data is implemented and directed to use Firebase as your store. This file should not need updating, as it pulls its information from your config file.
 
 	import DS from 'ember-data';
 	import ENV from 'Ember-Firebase-Login-Example/config/environment';
