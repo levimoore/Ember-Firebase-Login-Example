@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('email');
   this.route('create');
   this.route('secret');
+  this.route('password');
 });
 
 export default Router;
