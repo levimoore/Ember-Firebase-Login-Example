@@ -1,4 +1,7 @@
 import Ember from 'ember';
+import AunthenticatedRoute from './authenticated';
 
-export default Ember.Route.extend({
+var SecretRoute = AunthenticatedRoute.extend({
 });
+
+export default SecretRoute;
