@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
-var ref = new Firebase("https://bankroll-api-v1.firebaseio.com");
+var ref = new Firebase("https://<YOUR FIREBASE INFO>.firebaseio.com");
 
 
 export default Ember.Controller.extend({
 
-	  reset: function() {
+reset: function() {
     this.setProperties({
       userEmail: "",
       userPassword: "",
@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
     });
   },
 
-    token: localStorage.token,
+  token: localStorage.token,
   tokenChanged: function() {
     localStorage.token = this.get('token');
   }.observes('token'),
@@ -41,21 +41,17 @@ export default Ember.Controller.extend({
           console.log(attemptedTransition);
           
 	  } else {
-	  	_this.transitionToRoute('leagues');
+	  	_this.transitionToRoute('secret');
 	  }
 		});
 	}
 }
 });
-// we would probably save a profile when we register new users on our site
-// we could also read the profile to see if it's null
-// here we will just simulate this with an isNewUser boolean
+
 var isNewUser = true;
 
 ref.onAuth(function(authData) {
   if (authData && isNewUser) {
-    // save the user's profile into Firebase so we can
-    // list users, use them in security rules, and show profiles
     ref.child('users').child(authData.uid).set(authData);
   }
 });
