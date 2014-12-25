@@ -49,7 +49,8 @@ In the application adapter file is where Ember Data is implemented and directed 
 	export default DS.FirebaseAdapter.extend({
   		firebase: new window.Firebase('https://' + ENV.firebase_instance + '.firebaseio.com')
 	});
-
+#####In the third line of of the following controller files (all of them):
+######App/controllers/
 
 
 
