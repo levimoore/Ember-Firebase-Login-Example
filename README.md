@@ -2,7 +2,7 @@
 
 This is a work flow for web app authentication using [Firebase](https://www.firebase.com/) with Ember via [Ember-CLI.](http://www.ember-cli.com/) 
 
-You will need to sign up for Firebase. Their documentation is good, and you can find out more about how it works [here.](https://www.firebase.com/how-it-works.html)
+You will need to sign up for Firebase. Their documentation is good, and you can find out more about how it works [here.](https://www.firebase.com/how-it-works.html) Once you have an account create a new Firebase for your app and copy your unique Firebase url.
 
 ## Prerequisites
 
