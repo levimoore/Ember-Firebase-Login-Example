@@ -13,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/levimoore/Ember-Firebase-Login-Example.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -49,8 +49,22 @@ In the application adapter file is where Ember Data is implemented and directed 
 	export default DS.FirebaseAdapter.extend({
   		firebase: new window.Firebase('https://' + ENV.firebase_instance + '.firebaseio.com')
 	});
-#####In the third line of of the following controller files (all of them):
-######App/controllers/
+#####In the third line of of the following controller files (all of them) you will need to add the url of your newly created Firebase:
+	App/controllers/application.js
+	App/controllers/create.js
+	App/controllers/login.js
+	App/controllers/password.js
+	App/controllers/signup.js
+	
+	1 import Ember from 'ember';
+	2
+	3 var ref = new Firebase("https://<YOUR FIREBASE HERE>.firebaseio.com");
+	4
+	5 export default Ember.Controller.extend({
+	6      ............
+	7   }
+	8 };
+
 
 
 
