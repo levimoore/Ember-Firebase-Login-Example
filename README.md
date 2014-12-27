@@ -64,7 +64,8 @@ In the application adapter file is where Ember Data is implemented and directed 
 	6      ............
 	7   }
 	8 };
-
+#####In the Firebase Dashboard you will need to configure the password reset email on the login and auth tab...
+![My image](https://raw.githubusercontent.com/levimoore/Ember-Firebase-Login-Example/2651e1750904cd6e0720774aab5debe7280e91ba/img/email1.png)
 
 
 
