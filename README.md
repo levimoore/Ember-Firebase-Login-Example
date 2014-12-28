@@ -58,13 +58,23 @@ In the application adapter file is where Ember Data is implemented and directed 
 	
 	1 import Ember from 'ember';
 	2
-	3 var ref = new Firebase("https://<YOUR FIREBASE HERE>.firebaseio.com");
+	3 var ref = new Firebase("https://<YOUR FIREBASE INFO HERE>.firebaseio.com");
 	4
 	5 export default Ember.Controller.extend({
 	6      ............
 	7   }
 	8 };
+	
+#####You will also need to add your Firebase url to the "authenticated" route file:
+	App/routes/authenticated.js
+	
+	1 import Ember from 'ember';
+	2 import DS from 'ember-data';
+	3
+	4 var ref = new Firebase("https://<YOUR FIREBASE INFO HERE>.firebaseio.com");
 #####In the Firebase Dashboard you will need to configure the password reset email on the login and auth tab...
+
+#####Be sure to check "Enable Email & Password Authentication" before runnig your app.
 ![My image](https://raw.githubusercontent.com/levimoore/Ember-Firebase-Login-Example/2651e1750904cd6e0720774aab5debe7280e91ba/img/email1.png)
 
 You configure the password reset email with the string %TOKEN% in the body of your email text. This will provide a temporary password for the user allowing them to pick a permanent password. In the current workflow, when a user first signs up for your application they are logged in, immediately logged out, and then sent a "confirmation" email, which is really a password reset email. This allows for "hacky" email verification step for new users. The body of your password reset email should probaly toe the line between a welcome message, and an actual password reset, as you will use the same email for both.
@@ -90,9 +100,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
 
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
