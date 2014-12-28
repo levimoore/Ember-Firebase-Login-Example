@@ -1,3 +1,43 @@
 <div class="container">
 <h3>Please check your email to finish the sign up process.</h3>
 </div>
+<div class="row">
+<div class="col-md-6 col-md-offset-1">
+<h4>To complete sign up please pick a new password.</h4>
+</div>
+</div>
+<form {{action 'signUp' on='submit'}}class="form-horizontal" role='form'>
+<div class='form-group'>
+<div class="row">
+<label class="col-sm-5 control-label" for='userEmail'><p class='lead'>Please enter your email.</p></label>
+<div class="col-sm-4">
+{{input type="email" classNames="form-control" value=userEmail id="userEmail" placeholder="winner@example.com"}}
+</div>
+</div>
+<div class="row">
+<label class="col-sm-5 control-label" for='oldPassword'><p class='lead'>Enter temporary password.</p></label>
+<div class="col-sm-4">
+{{input type="password" classNames="form-control" value=oldPassword id="oldPassword" placeholder="copied from your email"}}
+</div>
+</div>
+<div class="row">
+<label class="col-sm-5 control-label" for='newPassword'><p class='lead'>Please pick a password.</p></label>
+<div class="col-sm-4">
+{{input type="password" classNames="form-control" value=newPassword id="newPassword" placeholder="secret but memorable"}}
+</div>
+</div>
+<div class="col-sm-10">
+<button type="submit" class="btn btn-custom pull-right">Finish Sign Up</button>
+</div>
+</div>
+</form>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+    {{#if error}}
+      <div class="alert alert-warning">
+        <div class="alert-title"><h4>Oops, there was a problem:</div>
+        <h5>{{error.message}}</h5>
+      </div>
+    {{/if}}
+</div>
