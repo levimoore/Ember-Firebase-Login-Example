@@ -67,6 +67,8 @@ In the application adapter file is where Ember Data is implemented and directed 
 #####In the Firebase Dashboard you will need to configure the password reset email on the login and auth tab...
 ![My image](https://raw.githubusercontent.com/levimoore/Ember-Firebase-Login-Example/2651e1750904cd6e0720774aab5debe7280e91ba/img/email1.png)
 
+You configure the password reset email with the string %TOKEN% in the body of your email text. This will provide a temporary password for the user allowing them to pick a permanent password. In the current workflow, when a user first signs up for your application they are logged in, immediately logged out, and then sent a "confirmation" email, which is really a password reset email. This allows for "hacky" email verification step for new users. The body of your password reset email should probaly toe the line between a welcome message, and an actual password reset, as you will use the same email for both.
+
 
 
 ## Running / Development
