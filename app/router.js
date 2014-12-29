@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('create');
   this.route('secret');
   this.route('password');
+  this.route('emailreset');
 });
 
 export default Router;
