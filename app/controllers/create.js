@@ -23,6 +23,8 @@ export default Ember.Controller.extend({
 	  }, function(error) {
 	  if (error === null) {
 	    console.log("Password reset email sent successfully");
+		ref.unauth();
+	    _this.transitionToRoute('email');
 	  } else {
 	    console.log("Error sending password reset email:", error);
 	  }
@@ -32,7 +34,6 @@ export default Ember.Controller.extend({
 		  	_this.set('error', error);
 		    console.log(error);
 		  }
-		  _this.transitionToRoute('email');
 		});
 		}
 	}

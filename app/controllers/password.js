@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
 }, function(error) {
   if (error === null) {
     console.log("Password changed successfully");
-    _this.transitionToRoute('leagues');
+    _this.transitionToRoute('secret');
   } else {
   	_this.set('error', error);
     console.log("Error changing password:", error);
