@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-var ref = new Firebase("https://ember-login-test.firebaseio.com");
+var ref = new Firebase("https://<YOUR FIREBASE INFO>.firebaseio.com");
 
 export default Ember.Controller.extend({
 

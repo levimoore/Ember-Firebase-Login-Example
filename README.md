@@ -72,7 +72,7 @@ In the application adapter file is where Ember Data is implemented and directed 
 	2 import DS from 'ember-data';
 	3
 	4 var ref = new Firebase("https://<YOUR FIREBASE INFO HERE>.firebaseio.com");
-#####In the Firebase Dashboard you will need to configure the password reset email on the login and auth tab...
+#####Log in to your Firebase account. In the Firebase Dashboard you will need to configure the password reset email on the login and auth tab...
 
 #####Be sure to check "Enable Email & Password Authentication" before runnig your app.
 ![My image](https://raw.githubusercontent.com/levimoore/Ember-Firebase-Login-Example/2651e1750904cd6e0720774aab5debe7280e91ba/img/email1.png)
