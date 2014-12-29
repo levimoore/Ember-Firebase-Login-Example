@@ -1,0 +1,26 @@
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-md-offset-2">
+<h3>Forgot Password</h3>
+</div>
+</div>
+<form {{action 'sendReset' on='submit'}}class="form-horizontal" role='form'>
+<div class='form-group'>
+<div class="row">
+<label class="col-sm-5 control-label" for='userEmail'><p class='lead'>Please enter your email.</p></label>
+<div class="col-sm-4">
+{{input type="email" classNames="form-control" value=userEmail id="userEmail" placeholder="user@example.com"}}
+</div>
+</form>
+
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+    {{#if error}}
+      <div class="alert alert-warning">
+        <div class="alert-title"><h4>Oops, there was a problem:</div>
+        <h5>{{error.message}}</h5>
+      </div>
+    {{/if}}
+</div>
+
